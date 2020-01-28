@@ -852,6 +852,7 @@ $(".reload-button").on("click", async function() {
         $(".reload-button").addClass("rotate");
         $(".project-section").remove();
         $(".hpc-section").removeClass("enabled");
+        $(".hpc-section").removeClass("selected");
         $(".hpc-section").addClass("disabled");
         $(".status-icon, .sa-status-icon").removeClass("ok");
         $(".status-icon, .sa-status-icon").removeClass("no");
