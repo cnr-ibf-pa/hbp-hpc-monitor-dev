@@ -849,6 +849,9 @@ $(".details-text").on("click", () => {
 $(".reload-button").on("click", async function() {
     if (!$(".reload-button").hasClass("rotate")) {
         closeDetailsPanel();
+        projects = []
+        totalProject.quota = 0
+        hpcContext = "";
         $(".reload-button").addClass("rotate");
         $(".project-section").remove();
         $(".hpc-section").removeClass("enabled");
